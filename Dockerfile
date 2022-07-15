@@ -7,7 +7,7 @@ RUN a2enmod proxy
 RUN a2enmod proxy_http
 RUN a2enmod proxy_wstunnel
 RUN a2enmod  rewrite
-RUN wget https://raw.githubusercontent.com/ansonkm/vps/main/000-default.conf?token=GHSAT0AAAAAABWTEWBY5O6MJRVCJ7R6YHO2YWP3LJA
+RUN wget https://raw.githubusercontent.com/ansonkm/server/main/000-default.conf
 RUN rm /etc/apache2/sites-available/000-default.conf
 RUN mv 000-default.conf /etc/apache2/sites-available
 RUN echo 'You can play the awesome Cloud NOW! - Message from Uncle LUO!' >/var/www/html/index.html
